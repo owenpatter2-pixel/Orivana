@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Firebase Auth Website</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <h1>Firebase Auth</h1>
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Email"
+      >
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+      >
+
+      <button onclick="signup()">
+        Sign Up
+      </button>
+
+      <button onclick="login()">
+        Login
+      </button>
+
+      <button onclick="googleLogin()">
+        Continue with Google
+      </button>
+
+      <button onclick="logout()">
+        Logout
+      </button>
+
+      <div id="user-box"></div>
+
+    </div>
+
+  </div>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
