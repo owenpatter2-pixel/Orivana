@@ -137,3 +137,8 @@ onAuthStateChanged(auth, (user) => {
   }
 
 });
+window.fakeTransfer = function(){
+
+  alert("Transfer Successful ✅");
+
+}
