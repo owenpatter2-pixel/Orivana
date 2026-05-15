@@ -1,40 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Firebase Auth Website</title>
+  <title>Orivana Investment</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <div class="container">
+  <!-- TOP NAVBAR -->
+  <nav class="navbar">
 
-    <div class="card">
+    <div class="logo">
+      Orivana
+    </div>
 
-      <h1>Firebase Auth</h1>
+    <div class="nav-links">
 
-      <input
-        type="email"
-        id="email"
-        placeholder="Email"
-      >
+      <a href="#">Dashboard</a>
 
-      <input
-        type="password"
-        id="password"
-        placeholder="Password"
-      >
+      <a href="#">Statistics</a>
 
-      <button onclick="signup()">
-        Sign Up
+      <a href="#">My Wallet</a>
+
+      <a href="#">Transfers</a>
+
+      <a href="#">Messages</a>
+
+    </div>
+
+    <div class="nav-right">
+
+      <button class="icon-btn">⚙️</button>
+
+      <button class="icon-btn">
+        🔔
       </button>
 
-      <button onclick="login()">
-        Login
-      </button>
+      <div class="profile">
+        <img
+          id="profile-pic"
+          src="https://via.placeholder.com/40"
+        />
+
+        <span id="profile-name">
+          Guest
+        </span>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main-container">
+
+    <!-- LEFT -->
+    <section class="left-side">
+
+      <!-- HERO -->
+      <div class="hero-card">
+
+        <div>
+
+          <h1>
+            Invest Smarter
+          </h1>
+
+          <p>
+            Track investments, profits and transfers.
+          </p>
+
+          <button class="primary-btn">
+            Learn More
+          </button>
+
+        </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1559526324-593bc073d938?q=80&w=1200&auto=format&fit=crop"
+        />
+
+      </div>
+
+      <!-- QUICK ACTIONS -->
+      <div class="cards-grid">
+
+        <div class="action-card yellow">
+
+          <h2>$25,400</h2>
+
+          <p>Total Profit</p>
+
+        </div>
+
+        <div class="action-card blue">
+
+          <h2>+18%</h2>
+
+          <p>Monthly Growth</p>
+
+        </div>
+
+        <div class="action-card green">
+
+          <h2>12 Assets</h2>
+
+          <p>Portfolio</p>
+
+        </div>
+
+      </div>
+
+      <!-- CHART -->
+      <div class="chart-card">
+
+        <h2>Statistics</h2>
+
+        <div class="chart-bars">
+
+          <div class="bar one"></div>
+
+          <div class="bar two"></div>
+
+          <div class="bar three"></div>
+
+          <div class="bar four"></div>
+
+          <div class="bar five"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- RIGHT -->
+    <aside class="right-side">
+
+      <div class="wallet-card">
+
+        <h2>My Wallet</h2>
+
+        <h1>$14,567.22</h1>
+
+        <p>Available Balance</p>
+
+      </div>
+
+      <div class="transfer-card">
+
+        <h2>Quick Transfer</h2>
+
+        <input
+          type="text"
+          placeholder="Recipient"
+        />
+
+        <input
+          type="number"
+          placeholder="Amount"
+        />
+
+        <button onclick="fakeTransfer()">
+          Send Money
+        </button>
+
+      </div>
+
+      <div class="message-card">
+
+        <h2>Messages</h2>
+
+        <p>
+          Market is up 12% today 📈
+        </p>
+
+        <p>
+          Bitcoin reached new highs 🚀
+        </p>
+
+      </div>
+
+    </aside>
+
+  </main>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>      </button>
 
       <button onclick="googleLogin()">
         Continue with Google
